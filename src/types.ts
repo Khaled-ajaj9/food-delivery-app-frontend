@@ -14,6 +14,7 @@ export type MenuItem = {
 };
 
 export type Restaurant = {
+  restaurantName: React.ReactNode;
   _id: string;
   user: string;
   restaurant: string;
@@ -25,4 +26,13 @@ export type Restaurant = {
   menuItems: MenuItem[];
   imageUrl: string;
   lastUpdate: string;
+};
+
+export type RestaurantSearchResponse = {
+  data: Restaurant[];
+  pagination: {
+    total: number;
+    page: number;
+    pages: number;
+  };
 };
