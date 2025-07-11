@@ -16,7 +16,7 @@ const SearchResultCard = ({ restaurant }: Props) => {
       <AspectRatio ratio={16 / 6}>
         <img
           src={restaurant.imageUrl}
-          className="rounded-md w-full object-cover"
+          className="rounded-md w-full h-full object-cover"
         />
       </AspectRatio>
       <div>
@@ -39,7 +39,7 @@ const SearchResultCard = ({ restaurant }: Props) => {
             </div>
             <div className="flex items-center gap-1">
               <Banknote />
-              Delivery from ${(restaurant.deliveryPrice / 100).toFixed(2)}
+              Delivery from £{(restaurant.deliveryPrice / 100).toFixed(2)}
             </div>
           </div>
         </div>

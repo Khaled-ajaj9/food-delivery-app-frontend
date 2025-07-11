@@ -14,7 +14,8 @@ export type MenuItem = {
 };
 
 export type Restaurant = {
-  restaurantName: React.ReactNode;
+  restaurantName: string;
+  // restaurantName: React.ReactNode;
   _id: string;
   user: string;
   restaurant: string;
